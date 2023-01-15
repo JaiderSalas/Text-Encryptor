@@ -16,5 +16,4 @@ function desencriptar(){
    var d = c.replace(/ober/g,"o")
    var e = d.replace(/ufat/g,"u")
    document.getElementById("mostrar").innerHTML = e
-   
 }
