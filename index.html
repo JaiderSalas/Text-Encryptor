@@ -4,6 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
     <script>
         function encriptar(){
             var texto = document.querySelector("textarea").value
@@ -25,19 +84,21 @@
         }
     </script>
 </head>
+<body>
     <header>
-        <h1>
-            Encriptador de Texto
-        </h1>
+        <h1>Encriptador de Texto</h1>
     </header>
-    <body>
-        <textarea id="texto" title="campo" name="campo" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
-        <div>
-            <input type= "button" onclick="encriptar()" value="Encriptar">
-            <input type= "button" onclick="desencriptar()" value="Desencriptar">
-        </div>
-        <h3 id="mostrar"></h3>
-    </body>
+    <textarea id="texto" title="campo" name="campo" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+    <div>
+        <input type="button" onclick="encriptar()" value="Encriptar">
+        <input type="button" onclick="desencriptar()" value="Desencriptar">
+    </div>
+    <h3 id="mostrar"></h3>
+    <footer>
+        <h4>Encriptador realizado por Jaider Salas Burgos</h4>
+    </footer>
+</body>
+</html>
     <footer>
         <h4>Encriptador realizado por Jaider Salas Burgos</h3>
     </footer>
